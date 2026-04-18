@@ -148,7 +148,7 @@ export default function FindingInfluencersDemo() {
                     <div className="flex w-11 flex-col items-center gap-1">
                       <DemoAvatar initials="LK" />
                       <span
-                        className="max-w-[2.75rem] truncate text-center text-[9px] font-medium text-black/45 select-none blur-[2px]"
+                        className="max-w-[2.75rem] truncate text-center text-[9px] font-medium text-black/45 select-none blur-[3px]"
                         aria-hidden="true"
                         title="Unlock to view full profile"
                       >
@@ -157,7 +157,7 @@ export default function FindingInfluencersDemo() {
                     </div>
                     <div className="min-w-0 self-center pt-0.5">
                       <div
-                        className="text-xs font-bold leading-tight text-black select-none blur-[2px]"
+                        className="text-xs font-bold leading-tight text-black select-none blur-[3px]"
                         aria-hidden="true"
                         title="Unlock to view full profile"
                       >
@@ -195,7 +195,7 @@ export default function FindingInfluencersDemo() {
                     <div className="flex w-11 flex-col items-center gap-1">
                       <DemoAvatar initials="JR" />
                       <span
-                        className="max-w-[2.75rem] truncate text-center text-[9px] font-medium text-black/45 select-none blur-[2px]"
+                        className="max-w-[2.75rem] truncate text-center text-[9px] font-medium text-black/45 select-none blur-[3px]"
                         aria-hidden="true"
                         title="Unlock to view full profile"
                       >
@@ -204,7 +204,7 @@ export default function FindingInfluencersDemo() {
                     </div>
                     <div className="min-w-0 self-center pt-0.5">
                       <div
-                        className="text-xs font-bold leading-tight text-black select-none blur-[2px]"
+                        className="text-xs font-bold leading-tight text-black select-none blur-[3px]"
                         aria-hidden="true"
                         title="Unlock to view full profile"
                       >

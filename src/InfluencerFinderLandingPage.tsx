@@ -1,3 +1,4 @@
+import ClientLogosMarquee from "./ClientLogosMarquee";
 import FindingInfluencersDemo from "./FindingInfluencersDemo";
 
 export default function InfluencerFinderLandingPage() {
@@ -109,20 +110,6 @@ export default function InfluencerFinderLandingPage() {
               >
                 {"i\uFB01nder"}
               </div>
-              <nav className="hidden min-w-0 flex-1 items-center justify-center gap-6 text-sm font-semibold text-black/80 lg:flex xl:gap-8">
-                <a href="#problem" className="whitespace-nowrap hover:opacity-70">
-                  Problem
-                </a>
-                <a href="#framework" className="whitespace-nowrap hover:opacity-70">
-                  Framework
-                </a>
-                <a href="#why-us" className="whitespace-nowrap hover:opacity-70">
-                  Why us
-                </a>
-                <a href="#demo" className="whitespace-nowrap hover:opacity-70">
-                  Demo
-                </a>
-              </nav>
               <button
                 type="button"
                 className="shrink-0 rounded-full bg-black px-4 py-2 text-xs font-semibold text-white transition hover:bg-neutral-900 md:px-5 md:py-2.5 md:text-sm"
@@ -133,18 +120,28 @@ export default function InfluencerFinderLandingPage() {
           </header>
 
           <section className="relative z-10 flex min-h-0 flex-1 flex-col px-4 pb-4 pt-1 md:px-8 md:pb-5 md:pt-2">
-            <div className="mx-auto flex w-full max-w-[100rem] flex-1 flex-col justify-start text-center">
-              <div className="flex min-h-[min(68dvh,36rem)] w-full flex-col items-center justify-center px-1 sm:px-3 md:min-h-[min(70dvh,40rem)]">
-                <h1 className="mx-auto w-full max-w-[min(100%,42rem)] text-balance font-extrabold uppercase leading-[0.9] tracking-[-0.03em] text-black [font-size:clamp(2.1rem,min(11vw,calc(80dvh/3.15)),min(7.5rem,calc(76dvh/3.05)))] sm:max-w-[min(100%,52rem)] md:max-w-[min(100%,64rem)] lg:leading-[0.88]">
-                  FIND INFLUENCERS
+            <div className="mx-auto flex min-h-0 w-full max-w-[100rem] flex-1 flex-col text-center">
+              <div className="flex min-h-0 flex-1 flex-col items-center justify-center px-1 py-3 sm:px-3 sm:py-4 md:py-5">
+                <h1
+                  className="mx-auto w-full max-w-[min(100%,82vw)] text-center font-black uppercase tracking-[-0.05em] text-black sm:max-w-[min(100%,38rem)] md:max-w-[min(100%,44rem)] lg:max-w-[min(100%,50rem)]"
+                  style={{
+                    fontSize: "clamp(5rem, min(17vh, 22vw), 26rem)",
+                    lineHeight: 0.86,
+                  }}
+                >
+                  FIND
+                  <br />
+                  INFLUENCERS
                   <br />
                   THAT SELL,
                   <br />
-                  NOT JUST PERFORM
+                  NOT JUST
+                  <br />
+                  PERFORM
                 </h1>
               </div>
 
-              <div className="mx-auto mt-2 inline-flex max-w-full flex-shrink-0 flex-wrap items-center justify-center gap-2 rounded-full border border-black/10 bg-white/40 px-3 py-1.5 text-[10px] font-semibold text-black shadow-sm backdrop-blur-sm sm:gap-2.5 sm:px-4 sm:py-2 sm:text-xs md:text-sm">
+              <div className="mx-auto mt-6 inline-flex max-w-full flex-shrink-0 flex-wrap items-center justify-center gap-3 rounded-full border border-black/10 bg-white/40 px-4 py-2.5 text-[11px] font-semibold leading-snug text-black shadow-sm backdrop-blur-sm sm:mt-8 sm:gap-4 sm:px-5 sm:py-3 sm:text-xs md:text-sm">
                 <span>Discover influencers with real conversion signals</span>
                 <span className="shrink-0 font-medium text-black/35" aria-hidden>
                   |
@@ -152,12 +149,12 @@ export default function InfluencerFinderLandingPage() {
                 <span>TikTok · Instagram · YouTube</span>
               </div>
 
-              <p className="mx-auto mt-2 max-w-2xl text-xs leading-relaxed text-black/70 sm:mt-3 sm:text-sm md:text-base">
+              <p className="mx-auto mt-6 max-w-2xl text-xs leading-relaxed text-black/70 sm:mt-8 sm:text-sm md:text-base">
                 Most tools help you find more influencers. iFinder helps you find the right ones — influencers with
                 stronger conversion potential and better audience fit.
               </p>
 
-              <div className="mt-3 flex flex-col items-center justify-center gap-2 sm:mt-4 sm:flex-row sm:gap-3">
+              <div className="mt-6 flex flex-col items-center justify-center gap-2 sm:mt-8 sm:flex-row sm:gap-3">
                 <button
                   type="button"
                   className="rounded-2xl bg-black px-5 py-2.5 text-xs font-semibold text-white transition hover:translate-y-[-1px] sm:text-sm md:px-6 md:py-3"
@@ -348,7 +345,7 @@ export default function InfluencerFinderLandingPage() {
                             {creator.name.charAt(0)}
                           </div>
                           <div
-                            className="min-w-0 select-none blur-[2px]"
+                            className="min-w-0 select-none blur-[3px]"
                             aria-hidden="true"
                             title="Unlock to view full profile"
                           >
@@ -383,7 +380,7 @@ export default function InfluencerFinderLandingPage() {
           </div>
         </section>
 
-        <section id="demo" className="px-4 pb-10 pt-7 md:px-8 md:pb-14 md:pt-9">
+        <section id="demo" className="px-4 pb-5 pt-7 md:px-8 md:pb-8 md:pt-9">
           <div className="mx-auto max-w-7xl rounded-[2.5rem] bg-white p-6 shadow-[0_12px_0_rgba(0,0,0,0.05)] md:p-10">
             <div className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
               <div>
@@ -420,6 +417,8 @@ export default function InfluencerFinderLandingPage() {
             </div>
           </div>
         </section>
+
+        <ClientLogosMarquee />
       </main>
     </div>
   );
