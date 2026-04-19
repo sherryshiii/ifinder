@@ -40,3 +40,71 @@
     animation: none;
   }
 }
+
+@keyframes demo-typewriter-caret {
+  0%,
+  45% {
+    opacity: 1;
+  }
+  55%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.demo-typewriter-caret {
+  display: inline-block;
+  width: 2px;
+  min-height: 1.1em;
+  margin-left: 1px;
+  border-radius: 1px;
+  background-color: #111111;
+  vertical-align: text-bottom;
+  animation: demo-typewriter-caret 1s step-end infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .demo-typewriter-caret {
+    animation: none;
+    opacity: 1;
+  }
+}
+
+@keyframes ifinder-dot-jump {
+  0%,
+  70%,
+  100% {
+    transform: translateY(0);
+  }
+  35% {
+    transform: translateY(-4px);
+  }
+}
+
+.ifinder-loading-dot {
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 9999px;
+  background-color: #808080;
+  animation: ifinder-dot-jump 0.55s ease-in-out infinite;
+}
+
+.ifinder-loading-dot:nth-child(1) {
+  animation-delay: 0ms;
+}
+
+.ifinder-loading-dot:nth-child(2) {
+  animation-delay: 120ms;
+}
+
+.ifinder-loading-dot:nth-child(3) {
+  animation-delay: 240ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ifinder-loading-dot {
+    animation: none;
+    transform: none;
+  }
+}

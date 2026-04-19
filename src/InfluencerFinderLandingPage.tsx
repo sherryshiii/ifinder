@@ -90,18 +90,7 @@ export default function InfluencerFinderLandingPage() {
   return (
     <div className="min-h-screen bg-[#f5c8c6] font-sans text-[#111111] antialiased">
       <main>
-        <div className="relative isolate flex min-h-[100dvh] flex-col overflow-hidden bg-[linear-gradient(180deg,#cfc2f7_0%,#d8c8f4_10%,#dcc8ea_22%,#e6c4ea_38%,#edc9dc_55%,#f1c7cf_72%,#f5c8c6_88%,#f5c8c6_100%)] shadow-[inset_0_-40px_60px_-20px_rgba(245,200,198,0.85)] before:pointer-events-none before:absolute before:inset-0 before:bg-[radial-gradient(ellipse_95%_65%_at_50%_-18%,rgba(255,255,255,0.55),transparent_52%)] before:content-[''] after:pointer-events-none after:absolute after:inset-0 after:bg-[radial-gradient(ellipse_70%_50%_at_0%_30%,rgba(210,190,255,0.35),transparent_55%)] after:content-['']">
-          <div className="relative z-10 shrink-0 overflow-hidden border-b border-white/40 px-4 py-1.5 text-center text-[11px] font-medium leading-snug text-black/85 shadow-[inset_0_1px_0_rgba(255,255,255,0.55)] sm:text-xs md:text-sm">
-            <div
-              aria-hidden="true"
-              className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_90%_160%_at_75%_-40%,rgba(255,255,255,0.55),transparent_50%),radial-gradient(ellipse_70%_120%_at_0%_50%,rgba(200,170,255,0.35),transparent_45%),linear-gradient(98deg,#f0e8fc_0%,#dcc8ea_38%,#e2c0e6_62%,#ebd4f4_100%)]"
-            />
-            <div className="relative">
-              <span className="font-bold">Stop</span> chasing <span className="font-bold">views</span>,{" "}
-              <span className="font-bold">start</span> choosing influencers that <span className="font-bold">convert</span>.
-            </div>
-          </div>
-
+        <div className="relative isolate flex min-h-0 flex-col overflow-hidden bg-[linear-gradient(180deg,#cfc2f7_0%,#d8c8f4_10%,#dcc8ea_22%,#e6c4ea_38%,#edc9dc_55%,#f1c7cf_72%,#f5c8c6_88%,#f5c8c6_100%)] shadow-[inset_0_-40px_60px_-20px_rgba(245,200,198,0.85)] before:pointer-events-none before:absolute before:inset-0 before:bg-[radial-gradient(ellipse_95%_65%_at_50%_-18%,rgba(255,255,255,0.55),transparent_52%)] before:content-[''] after:pointer-events-none after:absolute after:inset-0 after:bg-[radial-gradient(ellipse_70%_50%_at_0%_30%,rgba(210,190,255,0.35),transparent_55%)] after:content-['']">
           <header className="relative z-10 shrink-0 px-4 pb-1 pt-2 md:px-8 md:pb-1.5 md:pt-2.5">
             <div className="mx-auto flex max-w-7xl items-center justify-between gap-3">
               <div
@@ -110,63 +99,31 @@ export default function InfluencerFinderLandingPage() {
               >
                 {"i\uFB01nder"}
               </div>
-              <button
-                type="button"
-                className="shrink-0 rounded-full bg-black px-4 py-2 text-xs font-semibold text-white transition hover:bg-neutral-900 md:px-5 md:py-2.5 md:text-sm"
-              >
-                Log in
-              </button>
+              <div className="flex shrink-0 items-center gap-2 sm:gap-2.5">
+                <button
+                  type="button"
+                  className="rounded-full bg-black px-4 py-2 text-xs font-semibold text-white transition hover:bg-neutral-900 md:px-5 md:py-2.5 md:text-sm"
+                >
+                  Log in
+                </button>
+              </div>
             </div>
           </header>
 
-          <section className="relative z-10 flex min-h-0 flex-1 flex-col px-4 pb-4 pt-1 md:px-8 md:pb-5 md:pt-2">
-            <div className="mx-auto flex min-h-0 w-full max-w-[100rem] flex-1 flex-col text-center">
-              <div className="flex min-h-0 flex-1 flex-col items-center justify-center px-1 py-3 sm:px-3 sm:py-4 md:py-5">
+          <section className="relative z-10 flex shrink-0 flex-col px-4 pb-2 pt-1 md:px-8 md:pb-3 md:pt-2">
+            <div className="mx-auto flex w-full max-w-[100rem] flex-col text-center">
+              <div className="flex shrink-0 flex-col items-center justify-center px-1 py-4 sm:px-3 sm:py-5 md:py-6">
                 <h1
                   className="mx-auto w-full max-w-[min(100%,82vw)] text-center font-black uppercase tracking-[-0.05em] text-black sm:max-w-[min(100%,38rem)] md:max-w-[min(100%,44rem)] lg:max-w-[min(100%,50rem)]"
                   style={{
-                    fontSize: "clamp(5rem, min(17vh, 22vw), 26rem)",
+                    fontSize: "clamp(calc(5rem / 3), min(calc(17vh / 3), calc(22vw / 3)), calc(26rem / 3))",
                     lineHeight: 0.86,
                   }}
                 >
-                  FIND
+                  FIND INFLUENCERS THAT CONVERT,
                   <br />
-                  INFLUENCERS
-                  <br />
-                  THAT SELL,
-                  <br />
-                  NOT JUST
-                  <br />
-                  PERFORM
+                  NOT JUST PERFORM
                 </h1>
-              </div>
-
-              <div className="mx-auto mt-6 inline-flex max-w-full flex-shrink-0 flex-wrap items-center justify-center gap-3 rounded-full border border-black/10 bg-white/40 px-4 py-2.5 text-[11px] font-semibold leading-snug text-black shadow-sm backdrop-blur-sm sm:mt-8 sm:gap-4 sm:px-5 sm:py-3 sm:text-xs md:text-sm">
-                <span>Discover influencers with real conversion signals</span>
-                <span className="shrink-0 font-medium text-black/35" aria-hidden>
-                  |
-                </span>
-                <span>TikTok · Instagram · YouTube</span>
-              </div>
-
-              <p className="mx-auto mt-6 max-w-2xl text-xs leading-relaxed text-black/70 sm:mt-8 sm:text-sm md:text-base">
-                Most tools help you find more influencers. iFinder helps you find the right ones — influencers with
-                stronger conversion potential and better audience fit.
-              </p>
-
-              <div className="mt-6 flex flex-col items-center justify-center gap-2 sm:mt-8 sm:flex-row sm:gap-3">
-                <button
-                  type="button"
-                  className="rounded-2xl bg-black px-5 py-2.5 text-xs font-semibold text-white transition hover:translate-y-[-1px] sm:text-sm md:px-6 md:py-3"
-                >
-                  Start finding influencers
-                </button>
-                <a
-                  href="#problem"
-                  className="rounded-2xl bg-white/35 px-5 py-2.5 text-xs font-semibold text-black ring-1 ring-black/10 backdrop-blur-sm transition hover:bg-white/50 sm:text-sm md:px-6 md:py-3"
-                >
-                  See how we evaluate fit
-                </a>
               </div>
 
               <FindingInfluencersDemo />
